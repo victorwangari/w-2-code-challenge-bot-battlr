@@ -4,7 +4,7 @@ import Description from "./pages/Description";
  
 const routes = [
     {
-    path: "/",
+    path: "/w-2-code-challenge-bot-battlr",
     element: <App />,
    },
    {
