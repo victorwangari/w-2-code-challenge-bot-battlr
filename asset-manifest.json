@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/w-2-code-challenge-bot-battlr/static/css/main.5df0f483.css",
-    "main.js": "/w-2-code-challenge-bot-battlr/static/js/main.9860b32c.js",
+    "main.css": "/w-2-code-challenge-bot-battlr/static/css/main.b2a92833.css",
+    "main.js": "/w-2-code-challenge-bot-battlr/static/js/main.a8f28dc4.js",
     "static/js/453.52e1f0e5.chunk.js": "/w-2-code-challenge-bot-battlr/static/js/453.52e1f0e5.chunk.js",
     "index.html": "/w-2-code-challenge-bot-battlr/index.html",
-    "main.5df0f483.css.map": "/w-2-code-challenge-bot-battlr/static/css/main.5df0f483.css.map",
-    "main.9860b32c.js.map": "/w-2-code-challenge-bot-battlr/static/js/main.9860b32c.js.map",
+    "main.b2a92833.css.map": "/w-2-code-challenge-bot-battlr/static/css/main.b2a92833.css.map",
+    "main.a8f28dc4.js.map": "/w-2-code-challenge-bot-battlr/static/js/main.a8f28dc4.js.map",
     "453.52e1f0e5.chunk.js.map": "/w-2-code-challenge-bot-battlr/static/js/453.52e1f0e5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5df0f483.css",
-    "static/js/main.9860b32c.js"
+    "static/css/main.b2a92833.css",
+    "static/js/main.a8f28dc4.js"
   ]
 }
