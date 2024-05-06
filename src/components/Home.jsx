@@ -5,13 +5,13 @@ function Home() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    fetch("https://robot-data-base.onrender.com/bots")
+    fetch("https://bots-battlr-db.onrender.com/bots")
       .then(response => response.json())
       .then(re => setData(re));
   }, []);
 
   function favourites(bot) {
-    fetch("https://moviedatabase-g11e.onrender.com/favoriteBots", {
+    fetch("https://army-bots-battlr-db.onrender.com/bots", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
@@ -21,7 +21,7 @@ function Home() {
   }
 
   function Delete(id) {
-    fetch(`https://robot-data-base.onrender.com/bots/${id}`, {
+    fetch(`https://bots-battlr-db.onrender.com/bots/${id}`, {
       method: "DELETE",
     })
     .then(() => {
@@ -32,15 +32,15 @@ function Home() {
   return (
     <div className="row ms-5">
       {data.map((bot) => (
-        <div key={bot.id} className="card mx-3 mt-3 ">
+        <div key={bot.id} className="card  mx-3 mt-3 ">
           <img src={bot.avatar_url} className="card-img-top" alt={`Avatar of ${bot.name}`} />
           <div className="card-body">
             <h5 className="card-title">{bot.name}</h5>
             <p className="card-text">{bot.catchphrase}</p>
             <div className="home-btn">
-              <button onClick={() => favourites(bot)} type="button" className="btn btn-success ms-2">Enlist</button>
-              <Link to={`/description/${bot.id}`} className="btn btn-primary">View</Link>
-              <button onClick={() => Delete(bot.id)} type="button" className="btn btn-danger  ms-2">Delete</button>
+              <button onClick={() => favourites(bot)} type="button" className="btn btn-success ms-0">Enlist</button>
+              <Link to={`/description/${bot.id}`} className="btn view btn-primary">View</Link>
+              <button onClick={() => Delete(bot.id)} type="button" className="btn delete btn-danger ">delete</button>
             </div>
           </div>
         </div>

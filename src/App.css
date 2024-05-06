@@ -1,28 +1,27 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css");
 .card{
     width: 26vh;
-    display: flex;
+    background-color: aliceblue;
+    
+
 }
 .fav {
     width: 26vh;
     border: 1px solid black;
     background-color: azure;
     border-radius: 1vh;
-
-    margin-bottom: 2vh;
-    
-}
-.card-text{
-    width: 50%;
-    
+    margin-bottom: 3vh;
 }
 .app{
     height: 100%;
     padding-bottom: px; 
 }
 img{ 
-    border: 1px solid;
+    border: 1px solid grey;
     background-color: rgb(233, 233, 235);
+    margin-top: 1vh;
+
+    
 }
 .img{
     width: 20%;
@@ -31,14 +30,39 @@ img{
     padding-bottom: 2vh;
 }
 .row{
-    margin-bottom: 9vh;
+    
     margin-left: 50vh;
 }
 .fav-delete{
     align-items: end;
     margin-left: 2vh;
 }
-.home-btn{
-    
+.card-title{
+    font-size: 2vh;
+}
+.card-text{
+    font-size: 1vh;
+}
+.btn{
 
+    font-size: 10px;
+    padding: 2px ;
+}
+
+.delete , .view{
+    margin-left: 5px;
+    
+}
+.status{
+    display: flex;
+    
+}
+.armor , .damage{
+    margin-left: 1vh;
+}
+.health , .armor , .damage{
+    font-size: 1vh;
+}
+.des-card{
+    width: 115% ;
 }

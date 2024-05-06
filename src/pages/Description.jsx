@@ -9,7 +9,7 @@ function Description(){
     const id = params.id
     const navigate = useNavigate()
     useEffect(()=>{
-        fetch(`https://robot-data-base.onrender.com/bots/${id}`)
+        fetch(`https://bots-battlr-db.onrender.com/bots/${id}`)
         .then((res)=>res.json())
         .then((data)=>{
             setDescription(data)
@@ -18,10 +18,10 @@ function Description(){
     },[])
     console.log(description);
     function back(){
-        navigate("/")
+        navigate("/w-2-code-challenge-bot-battlr")
     }
     function favourites(){
-        fetch ("https://moviedatabase-g11e.onrender.com/favoriteBots",{
+        fetch ("https://army-bots-battlr-db.onrender.com/bots",{
             method:"POST",
             headers:{
                 "Content-Type":"application/json"
@@ -47,18 +47,20 @@ function Description(){
             <div className="">
                <div className="row   mt-5 ">
                    <img className="img col-lg-6 col-sm-12 border rounded-3" src={description.avatar_url} alt="" />
-                    <div className="card col-lg-6 col-sm-6" >
-                     <div className="card-body">
+                    <div className="card col-lg-6 col-sm-6 des-card" >
+                     <div className="card-body ">
                         <h5 className="card-title">{description.name}</h5>
                         <h6 className="card-subtitle mb-2 text-body-secondary">{description.bot_class}</h6>
-                        <p className="card-text"><span className="text-success ">Health</span> {description.health}</p>
-                        <p className="card-text"><span className="text-danger">Damage</span> {description.damage}</p>
-                        <p className="card-text"><span className="text-success">Armor</span> {description.armor}</p>
+                        <div className="status">
+                             <p className="card-text"><span className="text-success health ">Health</span> {description.health}</p>
+                             <p className="card-text"><span className="text-danger damage">Damage</span> {description.damage}</p>
+                             <p className="card-text"><span className="text-success armor">Armor</span> {description.armor}</p>
+                        </div>
                          <p className="card-text">{description.catchphrase}</p>
                          <div>
-                         <button onClick={favourites} type="button" class="btn btn-success ms-2">Enlist</button>
-                         <button onClick={back} type="button" class="btn btn-warning ms-2">Back</button>
-                         <button type="button" class="btn btn-danger ms-2">Delete</button> 
+                             <button onClick={favourites} type="button" class="btn btn-success ms-2">Enlist</button>
+                             <button onClick={back} type="button" class="btn view btn-warning ms-2">Back</button>
+                             <button type="button" class="btn delete btn-danger ms-2">Delete</button> 
                          </div>
                       <div>
                       </div>
