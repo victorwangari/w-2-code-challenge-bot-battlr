@@ -36,6 +36,7 @@ function Home() {
           <img src={bot.avatar_url} className="card-img-top" alt={`Avatar of ${bot.name}`} />
           <div className="card-body">
             <h5 className="card-title">{bot.name}</h5>
+            <h2 className='class'><span className='text-success'>Class:</span> {bot.bot_class}</h2>
             <p className="card-text">{bot.catchphrase}</p>
             <div className="home-btn">
               <button onClick={() => favourites(bot)} type="button" className="btn btn-success ms-0">Enlist</button>

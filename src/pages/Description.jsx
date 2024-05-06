@@ -16,7 +16,6 @@ function Description(){
         })
     
     },[])
-    console.log(description);
     function back(){
         navigate("/w-2-code-challenge-bot-battlr")
     }
@@ -43,20 +42,20 @@ function Description(){
     return(
         <div>
             <Favourites/>
-        
             <div className="">
+                <div className="army text-success mt-3"><h2>BOT DESCRIPTIONS</h2></div>
                <div className="row   mt-5 ">
-                   <img className="img col-lg-6 col-sm-12 border rounded-3" src={description.avatar_url} alt="" />
-                    <div className="card col-lg-6 col-sm-6 des-card" >
+                   <img className="img col-lg-4 mx-4 col-sm-1 border rounded-3" src={description.avatar_url} alt="" />
+                    <div className="card col-lg-8 col-sm-6 des-card" >
                      <div className="card-body ">
                         <h5 className="card-title">{description.name}</h5>
-                        <h6 className="card-subtitle mb-2 text-body-secondary">{description.bot_class}</h6>
+                        <h2 className='class'><span className='text-success'>Class:</span> {description.bot_class}</h2>
                         <div className="status">
-                             <p className="card-text"><span className="text-success health ">Health</span> {description.health}</p>
-                             <p className="card-text"><span className="text-danger damage">Damage</span> {description.damage}</p>
-                             <p className="card-text"><span className="text-success armor">Armor</span> {description.armor}</p>
+                             <p className="card-text health"><span className="text-success health ">Health</span> {description.health}</p>
+                             <p className="card-text damage"><span className="text-danger damage">Damage</span> {description.damage}</p>
+                             <p className="card-text armor"><span className="text-success armor">Armor</span> {description.armor}</p>
                         </div>
-                         <p className="card-text">{description.catchphrase}</p>
+                         <p className="card-text catch">{description.catchphrase}</p>
                          <div>
                              <button onClick={favourites} type="button" class="btn btn-success ms-2">Enlist</button>
                              <button onClick={back} type="button" class="btn view btn-warning ms-2">Back</button>

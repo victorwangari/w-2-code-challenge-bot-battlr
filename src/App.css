@@ -19,9 +19,7 @@
 img{ 
     border: 1px solid grey;
     background-color: rgb(233, 233, 235);
-    margin-top: 1vh;
-
-    
+    margin-top: 1vh; 
 }
 .img{
     width: 20%;
@@ -45,12 +43,12 @@ img{
 }
 .btn{
 
-    font-size: 10px;
+    font-size: 20px;
     padding: 2px ;
 }
 
 .delete , .view{
-    margin-left: 5px;
+    margin-left: 10px;
     
 }
 .status{
@@ -60,9 +58,19 @@ img{
 .armor , .damage{
     margin-left: 1vh;
 }
-.health , .armor , .damage{
-    font-size: 1vh;
+.health , .armor , .damage, .catch{
+    font-size: 2vh;
+}
+.armor , .damage{
+    margin-left: 2vh;
 }
 .des-card{
-    width: 115% ;
+    width: 45vh;
+}
+.army{
+    text-align: center;
+    color: rgb(253, 253, 253);
+}
+.class{
+    font-size: 2vh;
 }

@@ -22,12 +22,19 @@ function Favourites() {
   return (
     <div>
       <div className='bg-success'>
+        <div className='army'>
+          <h1>BOTS ARMY</h1>
+        </div>
         <div className="row  ms-5">
          {data.map((i) => (
           <div key={i.id} className="card fav mx-3 mt-3 ">
           <img src={i.avatar_url} className="card-img-top" alt={`Avatar of ${i.name}`} />
           <div className="card-body">
+            <div>
             <h5 className="card-title">{i.name}</h5>
+            <h2 className='class'><span className='text-success'>Class:</span> {i.bot_class}</h2>
+
+            </div>
             <p className="card-text">{i.catchphrase}</p>
             <div className="home-btn">
               <Link to={`/description/${i.id}`} className="btn btn-primary">View</Link>
